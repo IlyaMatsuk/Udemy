@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "a8a8bb9c7d915e8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f796d36e0b19d09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13f54f8f51cb53ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/Section 9. Parallelism.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7b0327dcf685ca2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "731a2a4115f29857",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f218a78f27367413",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bcef4c83331412bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "\"Learn Multithreading with Modern CPP\"",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "460e9f9ea49dd7f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 368.5
+  },
+  "right": {
+    "id": "b34d5d32044a3aba",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d97e7eeeaccbd3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c235ca933e53ad3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Theory/Section 9. Parallelism.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "379f3b82e5970499",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Theory/Section 9. Parallelism.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "41b488edf9177b01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bcdc792c5c3b1c8f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Theory/Section 9. Parallelism.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "13f54f8f51cb53ab",
+  "lastOpenFiles": [
+    "Theory/Section 8. Asynchronous Programming.md",
+    "Theory/Section 7. Atomic types.md",
+    "Theory/Section 6. Thread Synchronization.md",
+    "Theory/Section 5. Working with shared data.md",
+    "Theory/Section 4. Getting Started with Threads.md",
+    "Theory/Section 3. Introduction to Concurrency.md",
+    "Theory/Section 2. Review of Modern C++ Features.md",
+    "README.md",
+    "Theory/Section 10. Practical Data Structures and Concurrent Programming.md",
+    "Theory/README.md"
+  ]
+}
