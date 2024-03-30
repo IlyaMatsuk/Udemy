@@ -7,55 +7,70 @@
 //  sentence[1].capitalize = true;
 //  cout << sentence.str(); // prints "hello WORLD"
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
+#include<iostream> 
+#include<string>
+#include<cstring>
+#include<vector>
+
+using namespace std;
 
 struct Sentence
 {
+public:
   struct WordToken
   {
-    bool capitalize = false;
-  };
+    bool capitalize = 0;
+    string m_token;
 
-  Sentence(const std::string& text) : sentence(text)
+    WordToken(const string& word) : m_token{ word } {}
+
+    string custom_str() const 
+    {
+      string oss;
+      if (capitalize == false)
+      {
+        return m_token;
+      }
+
+      for (const auto& symbol : m_token)
+      {
+        oss += toupper(symbol);
+      }
+      return oss;
+    }
+  }; 
+
+  Sentence(const string& input) : m_text(input)
   {
+    char* token = strtok((char*)m_text.c_str(), " ");
+    while (token)
+    {
+      m_tokens_db.emplace_back(WordToken{ string(token) });
+      token = strtok(NULL, " ");
+    }
   }
 
   WordToken& operator[](size_t index)
   {
-    tokens[index] = WordToken();
-    return tokens.at(index);
+    m_tokens_db[index].capitalize = true;
+    return m_tokens_db[index];
   }
 
-  std::string str() const
+  string str() const
   {
-    int start, end, index;
-    start = end = index = 0;
-    char dl = ' ';
-
-    while ((start = sentence.find_first_not_of(dl, end)) != std::string::npos) {
-      end = sentence.find(dl, start);
-
-      const auto it = tokens.find(index);
-      if (it != tokens.end() && it->second.capitalize)
-      {
-        std::transform(sentence.begin() + start, sentence.end() - end - start, sentence.begin() + start,
-          [](unsigned char c) {return std::toupper(c); }
-        );
-      }
-
-      index++;
+    string oss;
+    for (const auto& tok : m_tokens_db)
+    {
+      oss += tok.custom_str();
+      oss += " ";
     }
-
-    return sentence;
+    oss.pop_back();
+    return oss;
   }
 
 private:
-  mutable std::string sentence;
-  std::map<size_t, WordToken> tokens;
+  string m_text;
+  vector<WordToken> m_tokens_db;
 };
 
 int main()
